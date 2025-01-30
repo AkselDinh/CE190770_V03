@@ -79,7 +79,7 @@ public class GradeStudent {
         int score;
         int scoreShiftSelection;
         
-        System.out.println("Midterm:");
+        System.out.println("Final: ");
         
         System.out.print("Weight (0-100)? ");
         weightFinalTerm = addWeight(InputValidation.intInputLimit(0, 100));
@@ -144,9 +144,10 @@ public class GradeStudent {
         } else {
             int total = totalWeight + weight;
             if (total > 100) {
-                System.out.printf("Total weight exceed allowed limit, automatically set total weight to 100\n");
+                System.out.printf("Total weight exceed allowed limit, automatically adjusted so total weight equal 100\n");
+                weight = 100 - totalWeight;
                 totalWeight = 100;
-                return 0;
+                return weight;
             } else {
                 totalWeight += weight;
                 return weight;

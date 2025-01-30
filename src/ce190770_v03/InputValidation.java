@@ -34,7 +34,7 @@ public class InputValidation {
                 // If exception occur, handles in catch block.
             } catch (Exception e) {
                 // Prompt user to retry on invalid input
-                System.out.println("Input is not a valid integer. Please try again: ");
+                System.out.print("Input is not a valid integer. Please try again: ");
             }
         }
     }
@@ -49,7 +49,7 @@ public class InputValidation {
                 // If exception occur, handles in catch block.
             } catch (Exception e) {
                 // Prompt user to retry on invalid input
-                System.out.println("Input is not a valid double. Please try again: ");
+                System.out.print("Input is not a valid double. Please try again: ");
             }
         }
     }
