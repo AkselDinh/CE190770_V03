@@ -6,17 +6,23 @@
 package ce190770_v03;
 
 /**
+ * S01 - Student marking program
+ * Main class that serves as the entry point for the grade calculation program
  *
- * @author Dinh Cong Phuc - CE190770
+ * @author Dinh Cong Phuc - CE190770 - 30/Jan/2025
  */
 public class CE190770_V03 {
 
     /**
-     * @param args the command line arguments
+     * Main method that initializes and runs the grade calculation program
+     *
+     * @param args command line arguments (not used)
      */
     public static void main(String[] args) {
+        // Create a new instance of GradeStudent class
         GradeStudent grdStd = new GradeStudent();
+        // Call the run method to start the program
         grdStd.run();
     }
-    
+
 }
