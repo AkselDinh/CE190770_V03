@@ -6,8 +6,8 @@
 package ce190770_v03;
 
 /**
- * S01 - Student marking program
- * Main class that serves as the entry point for the grade calculation program
+ * S01 - Student marking program Main class that serves as the entry point for
+ * the grade calculation program
  *
  * @author Dinh Cong Phuc - CE190770 - 30/Jan/2025
  */

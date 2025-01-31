@@ -9,8 +9,8 @@ import java.util.HashMap;
 import java.util.Scanner;
 
 /**
- * S01 - Student marking program
- * Class responsible for calculating and managing student grades
+ * S01 - Student marking program Class responsible for calculating and managing
+ * student grades
  *
  * @author Dinh Cong Phuc - CE190770 - 30/Jan/2025
  */
@@ -212,9 +212,15 @@ public class GradeStudent {
                         // Parse score and max values
                         int asmScore = Integer.parseInt(numbers[0]);
                         int max = Integer.parseInt(numbers[1]);
+                        if (max < 0) {
+                            throw new Exception("Max score must be between 0 and 150");
+                        } else if (max > 150) {
+                            System.out.println("Max score exceed 150, automatically adjusted to 150.");
+                            max = 150;
+                        }
                         // Validate score range
                         if (asmScore < 0 || asmScore > max) {
-                            throw new Exception("Score must be between 0 and max");
+                            throw new Exception("Score must be between 0 and 150");
                         }
                         // Store assignment score
                         assignmentScore.put("asm" + (i + 1), new int[]{asmScore, max});
@@ -230,11 +236,10 @@ public class GradeStudent {
 
         // Get section attendance
         System.out.printf("How many sections did you attend? ");
-        sections = InputValidation.getIntInput();
+        sections = InputValidation.intInputUnsigned();
         // Validate and adjust section attendance
-        if (sections < 0) {
-            System.out.println("Attend must be positive.");
-        } else if (sections > 30) {
+        if (sections > 30) {
+            System.out.println("Attendance exceed 30, automatically adjusted attend to 30.");
             sections = 30;
         }
 

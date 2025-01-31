@@ -8,8 +8,8 @@ package ce190770_v03;
 import java.util.Scanner;
 
 /**
- * S01 - Student marking program.
- * Input validation utility class Contains methods for validating user input
+ * S01 - Student marking program. Input validation utility class Contains
+ * methods for validating user input
  *
  * @author Dinh Cong Phuc - CE190770 - 30/Jan/2025
  */
@@ -88,8 +88,8 @@ public class InputValidation {
             // Get integer input
             int in = getIntInput();
             // Check if input is positive
-            if (in <= 0) {
-                System.out.println("Input must be larger than 0.");
+            if (in < 0) {
+                System.out.print("Input must be larger than 0, Please try again. ");
             } else {
                 return in;
             }
