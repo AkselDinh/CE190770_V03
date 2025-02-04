@@ -8,7 +8,7 @@ package ce190770_v03;
 import java.util.Scanner;
 
 /**
- * S01 - Student marking program. Input validation utility class Contains
+ * V03 - Student marking program. Input validation utility class Contains
  * methods for validating user input
  *
  * @author Dinh Cong Phuc - CE190770 - 30/Jan/2025

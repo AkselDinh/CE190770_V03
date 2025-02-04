@@ -9,7 +9,7 @@ import java.util.HashMap;
 import java.util.Scanner;
 
 /**
- * S01 - Student marking program Class responsible for calculating and managing
+ * V03 - Student marking program Class responsible for calculating and managing
  * student grades
  *
  * @author Dinh Cong Phuc - CE190770 - 30/Jan/2025
