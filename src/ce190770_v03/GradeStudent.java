@@ -212,6 +212,7 @@ public class GradeStudent {
                         // Parse score and max values
                         int asmScore = Integer.parseInt(numbers[0]);
                         int max = Integer.parseInt(numbers[1]);
+                        // Validate max score range
                         if (max < 0) {
                             throw new Exception("Max score must be between 0 and 150");
                         } else if (max > 150) {
@@ -226,6 +227,7 @@ public class GradeStudent {
                         assignmentScore.put("asm" + (i + 1), new int[]{asmScore, max});
                         break; // Exit the while loop if input is valid
                     }
+                    // Handle exception
                 } catch (NumberFormatException e) {
                     System.out.println("Please enter valid numbers, try again.");
                 } catch (Exception e) {
